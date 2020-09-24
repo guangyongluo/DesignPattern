@@ -1,0 +1,20 @@
+@startuml
+
+abstract class AbstractHose
+class CommonHouse
+class HighBuilding
+class Client
+
+AbstractHose : buildBasic() : void
+AbstractHose : buildWaller() : void
+AbstractHose : roofed() : void
+AbstractHose : build() : void
+
+AbstractHose <|-- CommonHouse
+AbstractHose <|-- HighBuilding
+
+CommonHouse <.. Client
+HighBuilding <.. Client
+
+
+@enduml
