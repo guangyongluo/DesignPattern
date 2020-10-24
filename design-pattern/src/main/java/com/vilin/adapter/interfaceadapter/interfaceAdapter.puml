@@ -1,0 +1,23 @@
+@startuml
+
+Interface Interface4 {
+  operate1(): void
+  operate2(): void
+  operate3(): void
+  operate4(): void
+}
+
+abstract class AbsAdapter{
+  + operate1(): void
+  + operate2(): void
+  + operate3(): void
+  + operate4(): void
+}
+
+AbsAdapter ..|> Interface4
+
+class Client
+
+Client ..> AbsAdapter
+
+@enduml
