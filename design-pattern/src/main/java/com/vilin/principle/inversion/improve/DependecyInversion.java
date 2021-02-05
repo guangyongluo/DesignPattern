@@ -3,7 +3,7 @@ package com.vilin.principle.inversion.improve;
 public class DependecyInversion {
 
     public static void main(String[] args) {
-        //客户端无需改变
+        //客户端无需改变g
         Person person = new Person();
         person.receive(new Email());
 

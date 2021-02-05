@@ -1,1 +1,32 @@
+# eclipse user profile
+/.settings/
+
+#eclipse complie folder
+/bin/
+
+# eclipse classpath
+.classpath
+
+# all kinds of project files
+*.project
+
+#idea configuration
+/.idea/
+
+#idea user profile
+*.iml
+
+# Maven compile folder
 /target/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+*.pom
+
+# UltraEdit backup file
+*.bak
