@@ -11,7 +11,7 @@
 *.project
 
 #idea configuration
-/.idea/
+.idea/
 
 #idea user profile
 *.iml

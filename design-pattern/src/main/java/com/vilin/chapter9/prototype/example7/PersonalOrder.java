@@ -1,8 +1,11 @@
 package com.vilin.chapter9.prototype.example7;
+
+import java.io.*;
+
 /**
  * 个人订单对象
  */
-public class PersonalOrder implements Cloneable , OrderApi{
+public class PersonalOrder implements Cloneable , OrderApi, Serializable {
 	/**
 	 * 订购人员姓名
 	 */
@@ -51,5 +54,21 @@ public class PersonalOrder implements Cloneable , OrderApi{
 		}		
 		return obj;
 	}
+
+	public PersonalOrder deepClone(){
+		try(ByteArrayOutputStream bos = new ByteArrayOutputStream();
+			ObjectOutputStream oos = new ObjectOutputStream(bos)){
+			oos.writeObject(this);
+
+			ByteArrayInputStream ios = new ByteArrayInputStream(bos.toByteArray());
+			ObjectInputStream ois = new ObjectInputStream(ios);
+			PersonalOrder o = (PersonalOrder)ois.readObject();
+			return o;
+		} catch (IOException e) {
+            throw new RuntimeException(e);
+        } catch (ClassNotFoundException e) {
+            throw new RuntimeException(e);
+        }
+    }
 
 }
