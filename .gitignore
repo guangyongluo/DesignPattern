@@ -11,7 +11,7 @@
 *.project
 
 #idea configuration
-.idea/
+/.idea/
 
 #idea user profile
 *.iml
@@ -30,3 +30,4 @@
 
 # UltraEdit backup file
 *.bak
+

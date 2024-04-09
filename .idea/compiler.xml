@@ -9,8 +9,5 @@
         <module name="design-pattern" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="design-pattern" target="1.5" />
-    </bytecodeTargetLevel>
   </component>
 </project>
