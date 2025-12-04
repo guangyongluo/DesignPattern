@@ -31,3 +31,7 @@
 # UltraEdit backup file
 *.bak
 
+# gradle files
+.gradle/
+/build/
+
