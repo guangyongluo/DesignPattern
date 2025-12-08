@@ -1,6 +1,6 @@
 package com.vilin.dp.creation.factory.method;
 
-public class main {
+public class Main {
 
   public static void main(String[] args) {
     AbstractFactory busFactory = new BusFactory();

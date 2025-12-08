@@ -1,6 +1,6 @@
 package com.vilin.dp.creation.factory.abstraction;
 
-public class main {
+public class Main {
 
   public static void main(String[] args) {
     VehicleFactory factory = new ShangQiFactory();
